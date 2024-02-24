@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form >
+        <h1>First name</h1>
+    <input type="text" id="firstname" onkeyup="update_name()">
+    <h1>Last name</h1>
+    <input type="text" id="lastname" onkeyup="update_name()">
+    <h1>age</h1>
+    <input type="number" id="age"onkeyup="update_age()" >
+    <h1>mobile number</h1>
+    <input type="tel" id="mobile"onkeyup="update_number()">
+    </form>
+   <div id="resume"style="padding: 5px; border: 5px dotted black;height: 200px;width: 200px;">
+    <div >
+        <h1 style="text-align: center;">Recipt</h1>
+        <span>Name is :</span><span id="update_name"></span>
+    </div>
+    <div>
+        <span>Age is :</span><span id="update_age"></span>
+    </div>
+    <div>
+        <span>Mobile number is :</span><span id="update_mobile"></span>
+    </div>
+   </div>
+   <button id="download">Download</button>
+   <script>
+    let name=document.getElementById("update_name")
+    let age=document.getElementById("update_age")
+    let mobile=document.getElementById("update_mobile")
+    let update_name=()=>{
+        name.innerText=((document.getElementById("firstname").value).toUpperCase()).charAt(0)+((document.getElementById("firstname").value).toLowerCase()).slice(1) +"  "+((document.getElementById("lastname").value).toUpperCase()).charAt(0)+((document.getElementById("lastname").value).toLowerCase()).slice(1) 
+    }
+    let update_age=()=>{
+        age.innerText=document.getElementById("age").value
+    }
+    let update_number=()=>{
+        mobile.innerText=document.getElementById("mobile").value
+    }
+
+
+   </script>
+</body>
+</html>
