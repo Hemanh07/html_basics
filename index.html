@@ -1,0 +1,621 @@
+<!--DOCTYPE> informs your browser about type & version of your document, which is an HTML5-->
+<!DOCTYPE html>
+<!--
+  it makes it easier for user agents to correctly display the text content of a web page. In addition, the language specification in the HTML code helps search engines to show the right search results to users from different countries.
+-->
+<html lang="en">
+  <head>
+    <!--
+      It is unicode numbers that are used to translate characters into binary numbers to be stored in the computer
+    -->
+    <meta charset="UTF-8" />
+    <!--meta tagin html always contain the information about the developer and the company-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title tag is used to give the title of the website-->
+    <title>Learn html with Me </title>
+    <!--linking css files to html files-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--interal css - styling the webpages inside thr=e html itself-->
+    <style>
+      #req {
+        background-color: black;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 2px;
+      }
+
+      #req:hover {
+        background-color: rgb(70, 67, 67);
+        cursor: pointer;
+        opacity: 0.8;
+        border: 0;
+        box-shadow: 0 0 5px yellow;
+      }
+
+      #cart {
+        background-color: rgb(251, 210, 77);
+        border: 0;
+        border-radius: 20px;
+        padding: 5px 40px;
+      }
+
+      #cart:hover {
+        background-color: rgb(222, 170, 0);
+        cursor: pointer;
+      }
+
+      #sign {
+        background-color: rgb(39, 163, 80);
+        border: 0;
+        border-radius: 4px;
+        color: white;
+        padding: 5px 10px;
+      }
+
+      #sign:hover {
+        cursor: pointer;
+        box-shadow: 0px 2px 4px rgb(188, 185, 185);
+      }
+
+      #boot {
+        margin-right: 10px;
+        background-color: blueviolet;
+        color: white;
+        padding: 10px;
+        border: 0;
+        border-radius: 3px;
+      }
+
+      .boot {
+        margin-right: 10px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(83, 82, 82);
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 3px;
+      }
+
+      .boot:hover {
+        background-color: rgb(83, 82, 82);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+
+      #apply {
+        display: inline;
+        background-color: blue;
+        color: white;
+        padding: 5px 15px;
+        border: 0;
+        border-radius: 15px;
+      }
+
+      #apply:hover {
+        background-color: darkblue;
+        cursor: pointer;
+      }
+
+      #save {
+        display: inline;
+        color: blue;
+        padding: 4px 13px;
+        background-color: white;
+        border-radius: 20px;
+        border: 0;
+        border: blue solid 0.1px;
+      }
+
+      #save:hover {
+        background-color: rgb(166, 224, 255);
+        border: blue solid 1.8px;
+        cursor: pointer;
+      }
+
+      ol {
+        list-style: lower-roman;
+      }
+
+      ul {
+        list-style: square;
+      }
+
+      table,
+      th,
+      tr,
+      td,
+      caption {
+        border: 1px black solid;
+        padding: 1px;
+        border-collapse: collapse;
+      }
+      th {
+        background-color: azure;
+      }
+      tfoot {
+        background-color: blanchedalmond;
+      }
+      table {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!--header in html contain all navigation and main heading of the website-->
+    <header>
+      <!--navigation to browse through the website easily-->
+      <nav>
+        <hr>
+          <hr>
+          <hr>
+        <ul>
+          
+          <h1>Nvigation bar</h1>
+          <li><a href="#responsiveforms">responsiveforms</a></li>
+          <li><a href="#buttons">buttons</a></li>
+          <li><a href="#address">address</a></li>
+          <li><a href="#list">list</a></li>
+          <li><a href="#detailstag">detail tag</a></li>
+          <li><a href="#links">links</a></li>
+          <li><a href="#htmlentities">html entities</a></li>
+          <li><a href="#images">images</a></li>
+          <li><a href="#table">tables</a></li>
+          <li><a href="#forms">forms</a></li>
+          <li><a href="#footer">footer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <hr>
+    <hr>
+    <!--main tag in html contain entire content of the website-->
+    <main>
+       
+    
+    <!--responsive forms-->
+    <article id="responsiveforms">
+      <h1>responsiveforms</h1>
+      <input
+      placeholder="enter your name"
+      id="input"
+      onkeyup="ontype()"
+      style="display: block"
+      autocomplete="off"
+    />
+    <span style="display: inline">NAME IS :</span>
+    <h2 style="display: inline"></h2>
+    </article>
+    <hr>
+    <hr>
+    
+    <!--button in html and styled using css-->
+    <article id="buttons">
+      <h1>buttons in html</h1>
+    </a>
+    <button>Hemanth</button>
+    <button>Chocolate</button>
+    <p>Hello World!</p>
+    <p>welcome to my website</p>
+    <a href="https://www.google.co.in/">Google search</a>
+    <a
+      href="https://www.amazon.in/s?k=amazon+prime&adgrpid=1322714101714665&hvadid=82669897711050&hvbmt=bb&hvdev=c&hvlocphy=143956&hvnetw=o&hvqmt=b&hvtargid=kwd-82670518517893%3Aloc-90&hydadcr=5621_2377279&tag=msndeskstdin-21&ref=pd_sl_f6wf1fn58_b"
+      style="display: block; padding-top: 5px; color: rgb(0, 113, 133)"
+      >Back to Amazon</a
+    >
+    <p style="display: block; font-weight: 200; font-size: 20px">
+      <b>Nike Black Running Shoes</b>
+    </p>
+    <p style="color: rgb(0, 118, 0)">$39 - in stock.</p>
+    <p>Free delivery tomorrow.</p>
+    <button
+      id="add"
+      style="
+        background-color: rgb(255, 216, 20);
+        border: 0;
+        border-radius: 15px;
+        padding: 5px 15px;
+      "
+    >
+      Add to Cart
+    </button>
+    <button
+      style="
+        background-color: rgb(255, 164, 28);
+        border: 0;
+        border-radius: 15px;
+        padding: 5px 30px;
+      "
+    >
+      Buy now
+    </button>
+    <hr />
+    <div>
+      <button id="req">Request now</button>
+      <button id="cart">Add to Cart</button>
+      <button id="sign">Sign up</button>
+    </div>
+    <hr />
+    <div>
+      <button id="boot">Get Started</button
+      ><button class="boot">Download</button>
+    </div>
+    <button id="apply">Apply on company website</button>
+    <button id="save">Save</button>
+    </article>
+    <hr>
+    <hr>
+    <!--list types in html-->
+    <article id="list">
+      <h1>list types in html</h1>
+      <ol>
+        <li>hello</li>
+        <li>hai</li>
+        <li>welcome</li>
+      </ol>
+      <ul>
+        <li>hello</li>
+        <li>hai</li>
+        <li>welcome</li>
+      </ul>
+      <!--decription list dt stands for description title ,dd -description details-->
+      <dl>
+        <dt>what is your job role?</dt>
+        <dd>I'm a Machine learning engineer and data science enthusist</dd>
+      </dl>
+    </article>
+    <hr>
+    <hr>
+    <!--abbrevations-->
+    <h1>abbrevation in html</h1>
+    <abbr title="crazy developer network">CDN</abbr>
+   <hr>
+   <hr>
+    <!--address tag-->
+    <h1>address tag in html</h1>
+    <address id="address">65,sri gopalapuram, cto colony,sidco-21.</address>
+    <hr>
+    <hr>
+    <!--links in html-->
+    <article id="links">
+      <h1>links in html</h1>
+      <!--linking to other pages-->
+      <a href="index1.html">
+        <h1>Create recipt</h1></a>
+      <h1>
+        to learn about html links
+        <a href="https://youtu.be/tfN9gPFmUfA?si=jTxIBg3IFylPsryB&t=5335"
+          >click here</a
+        >
+        <!--navigating to the top of the page-->
+        <h1><a href="#">back to top</a></h1>
+      </h1>
+      <!--navigating sections in html-->
+      <section id="ch1">
+        <h1>chapter 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe
+          mollitia quod rem animi, sequi laudantium maxime repudiandae. Sed
+          laudantium error in porro labore laboriosam enim neque placeat,
+          repellat, reiciendis voluptatum, eum voluptatem id esse soluta nam
+          similique ducimus laborum dolor! Incidunt maiores quisquam dolore porro
+          eos officiis impedit reprehenderit nisi error, nobis id expedita
+          possimus distinctio labore magnam! A veniam beatae molestias debitis
+          assumenda quos, adipisci dignissimos enim magni, doloremque nihil
+          ducimus facilis ex mollitia rerum minima ratione eius culpa esse! Odio
+          exercitationem blanditiis corporis vero nostrum ab fuga officiis, quos
+          ex labore. Voluptas id quos porro! Quasi quos eum minus id fugiat facere
+          dolore. Doloremque cum nesciunt ut vero repellat, fuga laborum ratione
+          alias nam facilis, autem sed, error amet voluptatibus soluta quis sint
+          ipsam voluptates quae maxime ea ipsa commodi. Officia eaque hic
+          perferendis aliquam fuga atque temporibus iste, laborum labore amet
+          autem in eveniet rem, corrupti sapiente harum aut assumenda
+          reprehenderit sequi. Pariatur hic consectetur, at debitis esse excepturi
+          aspernatur amet consequatur doloribus veritatis commodi sit laudantium
+          laborum maiores omnis illo nostrum non itaque vero provident ducimus
+          accusantium, repellendus dolore corrupti. Ut quidem aut eos repudiandae
+          quisquam officiis vitae veritatis est. Quam aspernatur vel qui
+          excepturi.
+        </p>
+      </section>
+  
+      <section id="ch2">
+        <h1>chapter 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe
+          mollitia quod rem animi, sequi laudantium maxime repudiandae. Sed
+          laudantium error in porro labore laboriosam enim neque placeat,
+          repellat, reiciendis voluptatum, eum voluptatem id esse soluta nam
+          similique ducimus laborum dolor! Incidunt maiores quisquam dolore porro
+          eos officiis impedit reprehenderit nisi error, nobis id expedita
+          possimus distinctio labore magnam! A veniam beatae molestias debitis
+          assumenda quos, adipisci dignissimos enim magni, doloremque nihil
+          ducimus facilis ex mollitia rerum minima ratione eius culpa esse! Odio
+          exercitationem blanditiis corporis vero nostrum ab fuga officiis, quos
+          ex labore. Voluptas id quos porro! Quasi quos eum minus id fugiat facere
+          dolore. Doloremque cum nesciunt ut vero repellat, fuga laborum ratione
+          alias nam facilis, autem sed, error amet voluptatibus soluta quis sint
+          ipsam voluptates quae maxime ea ipsa commodi. Officia eaque hic
+          perferendis aliquam fuga atque temporibus iste, laborum labore amet
+          autem in eveniet rem, corrupti sapiente harum aut assumenda
+          reprehenderit sequi. Pariatur hic consectetur, at debitis esse excepturi
+          aspernatur amet consequatur doloribus veritatis commodi sit laudantium
+          laborum maiores omnis illo nostrum non itaque vero provident ducimus
+          accusantium, repellendus dolore corrupti. Ut quidem aut eos repudiandae
+          quisquam officiis vitae veritatis est. Quam aspernatur vel qui
+          excepturi.
+        </p>
+      </section>
+      <section id="ch3">
+        <h1>chapter 3</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe
+          mollitia quod rem animi, sequi laudantium maxime repudiandae. Sed
+          laudantium error in porro labore laboriosam enim neque placeat,
+          repellat, reiciendis voluptatum, eum voluptatem id esse soluta nam
+          similique ducimus laborum dolor! Incidunt maiores quisquam dolore porro
+          eos officiis impedit reprehenderit nisi error, nobis id expedita
+          possimus distinctio labore magnam! A veniam beatae molestias debitis
+          assumenda quos, adipisci dignissimos enim magni, doloremque nihil
+          ducimus facilis ex mollitia rerum minima ratione eius culpa esse! Odio
+          exercitationem blanditiis corporis vero nostrum ab fuga officiis, quos
+          ex labore. Voluptas id quos porro! Quasi quos eum minus id fugiat facere
+          dolore. Doloremque cum nesciunt ut vero repellat, fuga laborum ratione
+          alias nam facilis, autem sed, error amet voluptatibus soluta quis sint
+          ipsam voluptates quae maxime ea ipsa commodi. Officia eaque hic
+          perferendis aliquam fuga atque temporibus iste, laborum labore amet
+          autem in eveniet rem, corrupti sapiente harum aut assumenda
+          reprehenderit sequi. Pariatur hic consectetur, at debitis esse excepturi
+          aspernatur amet consequatur doloribus veritatis commodi sit laudantium
+          laborum maiores omnis illo nostrum non itaque vero provident ducimus
+          accusantium, repellendus dolore corrupti. Ut quidem aut eos repudiandae
+          quisquam officiis vitae veritatis est. Quam aspernatur vel qui
+          excepturi.
+        </p>
+      </section>
+    </article>
+    <hr>
+    <hr>
+    <!--html entities-->
+    <article id="htmlentities">
+      <h1>html entities</h1>
+      <h1>hello&nbsp;World</h1>
+    <p>&lt;
+       &gt;
+      </p>
+    </article>
+    <hr/>
+    <hr/>
+    <!--images-->
+    <article id="images">
+      <h1>images in html</h1>
+      <img
+      src="tinywow_drawing with nothing_25060994.png"
+      alt="drawing with nothing logo"
+      width="1080"
+      height="1280"
+      loading="lazy"
+    />
+    <a
+      href="tinywow_drawing with nothing_25060994.png"
+      download="tinywow_drawing with nothing_25060994.png"
+      >download</a
+    >
+    </article>
+    <hr />
+    <hr>
+   <!--table in html-->
+   <article id="table">
+    <h1>tables</h1>
+    <table>
+      <caption>
+        time table
+      </caption>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th scope="col">time</th>
+          <th scope="col">work</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">early morning</th>
+          <td><time datetime="4 am" rowspan="1"> 4 am</time></td>
+          <td>wakeup and study</td>
+        </tr>
+        <tr>
+          <th rowspan="2" scope="row">break</th>
+          <td rowspan="2"><time datetime="8 am"> 8 am</time></td>
+
+          <td>breakfast</td>
+        </tr>
+
+        <tr>
+          <td>rest</td>
+        </tr>
+        <tr>
+          <th scope="row">after breakfast</th>
+          <td><time datetime="11 am">11 am</time></td>
+          <td>study again</td>
+        </tr>
+        <tr>
+          <td colspan="3" scope="row">LUNCH</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">all about my day</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <hr />
+    <hr />
+   </article>
+    <hr>
+    <hr>
+    <!--forms-->
+
+    <article id="forms">
+      <h1>forms in html</h1>
+      <article id="contact">
+        <h1>contact me</h1>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>personal information</legend>
+          <label for="firstName">FirstName:</label>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="enter your first name"
+            autocomplete="on"
+            required
+            id="firstName"
+          />
+          <br />
+          <label for="laststName">LaststName:</label>
+          <input
+            type="text"
+            name="laststName"
+            placeholder="enter your lastName"
+            autocomplete="on"
+            
+            id="laststName"
+          />
+          <br />
+          <label for="password">password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="enter your password"
+            autocomplete="off"
+            
+            id="password"
+          />
+          <label for="phonenumber">phone:</label>
+          <input
+            pattern="[0-9]{10}"
+            type="tel"
+            name="phone"
+            placeholder="+91"
+            autocomplete="off"
+            
+            id="phonenumber"
+          />
+          <label for="age">age:</label>
+          <input
+            pattern="[0-9]{10}"
+            type="number"
+            name="age"
+            placeholder=""
+            autocomplete="off"
+            min="10"
+            max="25"
+            step="3"
+            id="age"
+          />
+          <!-- <p>
+            <label for="content"><mark>Content in cs</mark></label>
+            <select name="content" id="content" multiple size="2">
+              <optgroup label="emerging technologies">
+                <option value="a1">Artificial intelligence</option>
+                <option value="ml">machine learning</option>
+              </optgroup>
+              <optgroup label="development">
+                <option value="web" selected>web development</option>
+                <option value="ui/uxs">ui/ux</option>
+              </optgroup>
+              <optgroup label="security ">
+                <option value="cyber">cyber security</option>
+              </optgroup>
+            </select>
+          </p> -->
+          <p>
+            <label for="content"><mark>Content in cs</mark></label>
+            <input
+              name="content"
+              id="content"
+              placeholder="enter your content"
+              list="content-list"
+            />
+            <datalist id="content-list">
+              <option value="a1">Artificial intelligence</option>
+              <option value="ml">machine learning</option>
+  
+              <option value="web" selected>web development</option>
+              <option value="ui/uxs">ui/ux</option>
+  
+              <option value="cyber">cyber security</option>
+            </datalist>
+          </p>
+          </fieldset> 
+         <!--  <fieldset>
+            <legend>option information</legend>
+          <input name="technologies"type="radio" id="artificalintelligence"></input>
+          <label for="artificalintelligence"><abbr title="artificalintelligence">AI</abbr> </label>
+          <input name="technologies"type="radio" id="ml"></input>
+          <label for="ml"><abbr title="machine learning">ML</abbr></label>
+          <input name="technologies"type="radio" id="ds"></input>
+          <label for="ds"><abbr title="data science">DS</abbr></label>
+          <input name="technologies"type="radio" id="web"></input>
+          <label for="web">web development</label>
+          </fieldset>  -->
+          <fieldset>
+            <legend>check optioninformation</legend>
+          <input name="technologies"type="checkbox" id="artificalintelligence"></input>
+          <label for="artificalintelligence"><abbr title="artificalintelligence">AI</abbr> </label>
+          <input name="technologies"type="checkbox" id="ml"></input>
+          <label for="ml"><abbr title="machine learning">ML</abbr></label>
+          <input name="technologies"type="checkbox" id="ds"></input>
+          <label for="ds"><abbr title="data science">DS</abbr></label>
+          <input name="technologies"type="checkbox" id="web"></input>
+          <label for="web">web development</label>
+          </fieldset> 
+          <fieldset>
+            <legend>text field</legend>
+            <label for="note">give me a note</label>
+            <div>
+              <textarea name="note" id="note" cols="30" rows="10" placeholder="type your thoughs"></textarea>
+            </div>
+          </fieldset>
+          <button type="submit">submit</button>
+          <button type="reset">reset</button>
+        </form>
+      </article>
+    </article>
+    <hr>
+    <hr>
+     <!--details tag (quizz button)-->
+     <article id="detailstag">
+      <h1>details tag</h1>
+      <details>
+        <summary>Guess How many <mark>drawings</mark> i draw per day?</summary>
+        <p>
+          my work time is 7 hours(for whole day)and i approximates draw
+          <mark> 6 drawings </mark>per day
+        </p>
+      </details>
+      
+      <details>
+        <summary>hai</summary>
+        <h1>who am i???</h1>
+        <p>Hemanth</p>
+      </details>
+    </article>
+    <!--javascript code-->
+    <script>
+      let text = document.querySelector("h2");
+      let ontype = function () {
+        text.innerText = `${document.getElementById("input").value}`;
+      };
+    </script>
+    </main>
+    <hr>
+    <!--footer tag is always add at the bottom of websites-->
+    <footer id="footer">
+      <h1>footer in html</h1>
+      <a href="#">back to top</a>
+      <p>Copyright &copy;Learn html with me</p>
+    </footer>
+  </body>
+</html>
